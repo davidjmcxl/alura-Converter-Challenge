@@ -13,6 +13,7 @@ import javax.swing.ButtonGroup;
 import javax.swing.JButton;
 import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
+import javax.swing.ImageIcon;
 
 public class Conversor extends JFrame implements ActionListener {
 
@@ -83,6 +84,11 @@ public class Conversor extends JFrame implements ActionListener {
 		btnCancelar.setBounds(337, 358, 138, 52);
 		btnCancelar.addActionListener(this);
 		contentPane.add(btnCancelar);
+		
+		JLabel lblNewLabel = new JLabel("");
+		lblNewLabel.setIcon(new ImageIcon("C:\\Users\\DAVID MORENO C\\Downloads\\Imagen2.jpg"));
+		lblNewLabel.setBounds(160, 156, 171, 154);
+		contentPane.add(lblNewLabel);
 	}
 
 	public void actionPerformed(ActionEvent e) {
